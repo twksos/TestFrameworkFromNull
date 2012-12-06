@@ -8,6 +8,10 @@ public class Foo {
     }
 
     public static void main(String[] args) {
-        System.out.println(new Foo().add(1,2));
+        boolean foo_add_1_and_2_should_be_3 = new Foo().add(1, 2) == 3;
+        if(!foo_add_1_and_2_should_be_3){
+        System.out.println("foo_add_1_and_2_should_be_3 fails!!");
+            System.exit(1);
+        }
     }
 }
